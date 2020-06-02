@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+.header
+{
+    background: #21C08B;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__img
+{
+    margin-left: 30px;
+    width: 200px;
+}
+.register
+{
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+}
+.register__container
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 70px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around; /* Debería agregarlo al finalizar los demás estilos, para que mientras estoy configurando todo, poder visualizar el espacio real que voy dejando, y al final si ubicarlos según la separación final. */
+    flex-direction: column;
+}
+.input
+{
+    background-color: transparent;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    border-left: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+}
+::placeholder
+{
+    color: white;
+}
+.button
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 50px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.register__container--login a
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.register__container--login a:hover
+{
+    text-decoration: underline;
+}
+.footer
+{
+    background-color: #AB88FF;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer a
+{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.footer a:hover
+{
+    text-decoration: underline;
+}
