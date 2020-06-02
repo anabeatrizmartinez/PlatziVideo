@@ -130,9 +130,31 @@ body
 .carousel
 {
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
     padding-left: 30px;
     position: relative;
+}
+
+.carousel::-webkit-scrollbar 
+{
+    height: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb 
+{
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover
+{
+    background-color: #999999;
+}
+
+.carousel::-webkit-scrollbar-track 
+{
+    background: #e1e1e1;
+    border-radius: 4px;
 }
 
 .carousel__container
@@ -249,4 +271,19 @@ body
 .footer a:hover
 {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .main__description--title 
+    {
+        font-size: 30px;
+    }
+  
+    .footer 
+    {
+        margin-top: 10px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }

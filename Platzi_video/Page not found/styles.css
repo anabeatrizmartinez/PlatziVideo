@@ -1,0 +1,87 @@
+body
+{
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+.header
+{
+    background-color: #21C08B;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    top: 0;
+}
+.header__img
+{
+    margin-left: 30px;
+    width: 200px;
+}
+
+.error
+{
+	background: linear-gradient(#21C08B, #AB88FF);
+	color: white;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    min-height: calc(100vh - 200px);
+}
+
+.error__number h1
+{
+    margin: 0;
+    font-size: 55px;
+    animation-name: beat; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes beat
+{
+  to
+  {
+    transform: scale(1.5);
+  }
+}
+
+.error__message
+{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer
+{
+    background-color: #AB88FF;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.footer a
+{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+    
+}
+.footer a:hover
+{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px)
+{
+    .footer
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
